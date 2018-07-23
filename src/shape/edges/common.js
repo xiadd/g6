@@ -26,10 +26,11 @@ const defaultArrow = {
   },
   style(item) {
     const keyShape = item.getKeyShape();
-    const { strokeOpacity, stroke } = keyShape.get('attrs');
+    const { strokeOpacity, stroke, opacity } = keyShape.get('attrs');
     return {
       fillOpacity: strokeOpacity,
-      fill: stroke
+      fill: stroke,
+      opacity
     };
   }
 };
