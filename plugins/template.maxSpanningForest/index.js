@@ -126,7 +126,7 @@ class Plugin {
     });
     graph.node({
       label(model) {
-        let txt = model.name;
+        let txt = model.viewName;
         if (txt === undefined) txt = '';
         return {
           text: txt,

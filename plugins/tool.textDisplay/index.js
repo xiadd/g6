@@ -14,6 +14,9 @@ class Plugin {
     this.graph.on('afterchange', () => {
       this.textDisplay();
     });
+    this.graph.on('afterlayout', () => {
+      this.textDisplay();
+    });
     this.graph.on('afterzoom', () => {
       this.textDisplay();
     });
