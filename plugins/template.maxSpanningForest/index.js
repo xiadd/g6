@@ -126,8 +126,10 @@ class Plugin {
     });
     graph.node({
       label(model) {
+        let txt = model.name;
+        if (txt === undefined) txt = '';
         return {
-          text: model.id,
+          text: txt,
           fill: 'black',
           stroke: '#fff',
           lineWidth: 2.5
